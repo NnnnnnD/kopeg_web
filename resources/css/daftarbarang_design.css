@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #800040;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 124px;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Content */
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #800040;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #800040;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.edit-button, .add-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #800040;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.edit-button:hover, .add-button:hover {
+    background-color: #a00050;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}

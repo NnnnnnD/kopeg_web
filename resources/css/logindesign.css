@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: sans-serif;
+  background-color: #f0f0f0; /* Warna abu-abu muda */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f06, #f0f0f0); /* Latar belakang gradient */
+}
+
+/* Form Login */
+.login-form {
+  width: 100%;
+  max-width: 400px; /* Lebar box */
+  padding: 20px;
+  background-color: #fff; /* Warna putih */
+  border-radius: 10px; /* Sudut box membulat lebih besar */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan box lebih besar */
+  text-align: center;
+}
+
+/* H1 */
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333; /* Warna teks */
+}
+
+/* Label */
+label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+  color: #555; /* Warna teks label */
+}
+
+/* Input */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Button */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #993366; /* Warna merah maroon */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #77294d; /* Warna merah maroon lebih gelap saat hover */
+}
+
+/* Error Message */
+#error-message {
+  display: none;
+  color: red;
+  margin-top: 10px;
+}

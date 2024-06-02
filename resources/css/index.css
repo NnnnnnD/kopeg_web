@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #800040;
+    padding: 10px 20px;
+    color: white;
+    z-index: 2; /* Ensure the navbar is above other elements */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 100px; /* Adjust logo size */
+}
+
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Initially hide the burger icon */
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 60px; /* Adjusted to avoid overlapping with navbar */
+    left: 0;
+    width: 200px;
+    height: calc(100% - 60px); /* Adjust to fit within the viewport */
+    background-color: #333;
+    padding-top: 20px;
+    z-index: 1;
+    overflow-y: auto; /* Add scrolling within the sidebar if needed */
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    padding-top: 75px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+.sidebar ul li a.active {
+    background-color: #800040;
+}
+
+/* Content */
+.content {
+    margin-left: 220px; /* Same as sidebar width + some margin */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px); /* Adjust height as needed */
+    margin-top: 60px; /* Avoid overlapping with the fixed navbar */
+}
+
+/* Card */
+.card {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.card-header {
+    padding: 15px;
+    background-color: #f8f9fc;
+    border-bottom: 1px solid #e3e6f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Chart Area */
+.chart-area {
+    position: relative;
+    height: 500px;
+    width: 100%;
+}
+
+#myAreaChart {
+    width: 100% !important;
+    height: 100% !important;
+}
